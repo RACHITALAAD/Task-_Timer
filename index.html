@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="timerbody">
+        <div class="timerbox">00:00:00</div>
+        <h1 class="startitle">Click Start For Task Time!</h1>
+        
+        <div class="user-time-settings">
+          
+            <div class="taskdiv">
+                
+                <span  id="taskheading">Set your Task Time</span>
+
+                <div class="inputtaskdiv">
+                <input type="number" class="clockinput" id="taskhours" min="0" value="1" max="99">
+                <span class="colon">:</span>
+                <input type="number" class="clockinput" id="taskminutes" min="0" value="0" max="59">
+                <span class="colon">:</span>
+                <input type="number" class="clockinput" id="taskseconds" min="0" value="0" max="59">
+                </div>
+                
+
+            </div>
+            
+            <div class="refreshdiv">
+
+                <span id="breakheading">Set your Refresh Time</span>
+
+                <div class="inputbreakdiv">
+                <input type="number" class="clockinput" id="breakhours" min="0" value="0" max="99">
+                <span class="colon">:</span>
+                <input type="number" class="clockinput" id="breakminutes" min="0" value="10" max="59">
+                <span class="colon">:</span>
+                <input type="number" class="clockinput" id="breakseconds" min="0" value="0" max="59">
+                </div>
+
+            </div>
+           
+
+        
+        </div>
+        
+        <div class="buttons">
+            <button id="startcolor" class="startbutton button">Start</button>
+            <button id="pausecolor" class="pausebutton button">Pause</button>
+            <button id="resumecolor" class="resumebutton button">Resume</button>
+            <button id="restartcolor" class="restartbutton button">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
